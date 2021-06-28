@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 namespace Gamekit3D
 {
@@ -35,6 +36,7 @@ namespace Gamekit3D
             {
                 inventoryChecks[i].CheckInventory(other.GetComponentInChildren<InventoryController>());
             }
+            SceneManager.LoadScene("Scenes/Win Sence");
         }
 
         void OnTriggerExit(Collider other)
